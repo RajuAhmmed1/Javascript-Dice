@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dice Game</title>
+    <meta charset="utf-16" />
+    <meta name="viewport" content="widht=device-width,initial-scale=1.0" />
+    <link href="dice.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>DICE GAME!</h1>
+    <div class="dice_game">
+      <!-- PLAYER ONE START-->
+      <div id="player_1" class="active inactive">
+        <h2>player 1</h2>
+        <div class="pt1">
+          <h4>TOTAL SCORE</h4>
+          <h4 id="player_1_total_score">:</h4>
+        </div>
+        <div class="pc1">
+          <h4>CURRENT SCORE</h4>
+          <h4 id="player_1_current">:</h4>
+        </div>
+      </div>
+      <!-- PLAYER ONE END -->
+
+      <!-- DICE SECTION START -->
+      <div class="dice">
+        <div class="d1">
+          <input class="dice_value" type="text" disabled />
+          <button class="hold" type="button">hold game!</button>
+          <button class="rolling" type="button">Roll dice</button>
+        </div>
+      </div>
+
+      <!-- DICE SECTION END -->
+
+      <!-- PLAYER TWO START -->
+      <div id="player_2" class="active inactive">
+        <h2>player 2</h2>
+        <div class="pt2">
+          <h4>TOTAL SCORE</h4>
+          <h4 id="player_2_total_score">:</h4>
+        </div>
+        <div class="pc2">
+          <h4>CURRENT SCORE</h4>
+          <h4 id="player_2_current">:</h4>
+        </div>
+      </div>
+      <!-- PLAYER TWO END -->
+    </div>
+  </body>
+  <script src="dice.js"></script>
+</html>
